@@ -1,0 +1,81 @@
+//Class DisplayIsland
+- doing as a main class to build objects in the island
+- method draw island and display island, animals and food inside
+- 
+
+//Class Things
+- as a super class of animals and plants 
+- method to display information
+- method to create random position
+- create constructor that get data for both animals and plants class as a initial information
+
+//Class Island 
+- create constructor to allow users to initial size of island in the main class(DisplayIsland)
+- have an ArrayList to store animals and plants in the list
+- method to add animals and plants in island
+- method to print animals and plants (while check position of animals and plants)
+- method to print water animals (while check position of water animals)
+- method to draw area of land on island (in the space that is not the same position)
+- method to draw area of water on island
+- method to generate island by automatically display island 10 times
+- method to check that the position of animals and plants will be outside island or not by return boolean
+- method move random position while check that the random position is still in the island(animals and plants)
+- method to generate round of growing plants will be different
+- method to increment growing by showing number(Max grow is 9)
+- method to decrement growing by showing number if it decrease until 0 and it will be eaten it will be remove
+- method to check out of the island if the next position x or y of animals is out of the island will set back the the previous position and random move again
+- method to check each turn of display island if it reach certain number of turn and animals did not reach food it will be remove
+- method to random position water by using random position by calculate with width and height of the water whether is out of the island or not
+- method run though all animals that is survive on the list(not be remove or has create as a new object)
+
+//Class Animals extends Things
+- create constructor from parent class(Things)
+- method to move in 4 directions: left, right, up, down
+- method to random move whether left, right, up, down
+- method check collision move in the same position
+- method to check distance by return boolean and pass direction to move in move method
+- method to check the closet food (Meat or Plants) that animals can eat and move toward that direction
+- method to move to food if check distance is true
+- method to remove
+- method to check if animals side by side to each other will create the new animals objects
+
+//Class Rabbit extends Animals
+- create constructor from parent class(Animals)
+
+//Class Kiwi extends Animals
+- create constructor from parent class(Animals)
+
+//Class WaterAnimals extends Animals
+- create constructor from parent class(Animals)
+
+//Class Crocodiles extends WaterAnimals
+- create constructor from parent class(WaterAnimals)
+
+//Class AirAnimals extends Animals
+- create constructor from parent class(Animals)
+
+//Class Bird extends AirAnimals
+- create constructor from parent class(AirAnimals)
+
+//Class Meat extends Things
+- create constructor from parent class(Things)
+- method to remove
+
+//Class worm extends Meat
+- create constructor from parent class(Meat)
+
+//Class egg extends Meat
+- create constructor from parent class(Meat)
+
+//Class Plants extends Things
+- create constructor from parent class(Things)
+- method to remove
+- method to increment growing by showing number(Max grow is 9)
+- method to decrement growing by showing number if it decrease until 0 and it will be eaten it will be remove
+- method symbol wait for a certain number of turn to grow to be plants that can be eat change from symbol to number
+
+//Class Grass
+- create constructor from parent class(Plants)
+
+//Class Apple tree
+- create constructor from parent class(Plants)
